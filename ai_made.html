@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Table</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: #1a1a1a; /* Softer dark background */
+        color: white;
+        font-family: Arial, sans-serif; /* Better readability */
+      }
+
+      /* Single container for h1 and table */
+      .timetable-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh; /* Full-screen centering */
+      }
+
+      h1 {
+        margin: 20px 0; /* Reduced margin for spacing */
+        font-size: 2.5rem; /* Relative unit */
+        text-align: center;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 80%; /* Responsive width */
+        max-width: 700px; /* Limit max width */
+        background-color: #2c2c2c; /* Dark table background */
+        font-size: 1.1rem; /* Flexible font size */
+      }
+
+      th,
+      td {
+        border: 1px solid #ffffff; /* White borders for visibility */
+        padding: 12px; /* Better spacing */
+        text-align: center;
+      }
+
+      th {
+        background-color: #4a4a4a; /* Darker header */
+        font-weight: bold;
+      }
+
+      /* Alternating row colors */
+      tr:nth-child(even) {
+        background-color: #3a3a3a;
+      }
+
+      /* Hover effect for interactivity */
+      tr:hover {
+        background-color: #555; /* Highlight on hover */
+      }
+
+      /* Responsive design for smaller screens */
+      @media (max-width: 600px) {
+        table {
+          width: 95%; /* Full width on small screens */
+          font-size: 0.9rem; /* Smaller font */
+        }
+        h1 {
+          font-size: 1.8rem; /* Smaller heading */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="timetable-container">
+      <h1>Time Table</h1>
+      <table>
+        <tr>
+          <th>Time (hrs)</th>
+          <th>Activity</th>
+        </tr>
+        <tr>
+          <td><time datetime="05:00">05:00</time></td>
+          <td>Waking up</td>
+        </tr>
+        <tr>
+          <td>
+            <time datetime="05:00">05:00</time> -
+            <time datetime="05:30">05:30</time>
+          </td>
+          <td>Daily chores</td>
+        </tr>
+        <tr>
+          <td>
+            <time datetime="05:30">05:30</time> -
+            <time datetime="06:30">06:30</time>
+          </td>
+          <td>Yoga + Meditation</td>
+        </tr>
+        <tr>
+          <td>
+            <time datetime="06:30">06:30</time> -
+            <time datetime="07:30">07:30</time>
+          </td>
+          <td>Study Time</td>
+        </tr>
+        <tr>
+          <td>
+            <time datetime="07:30">07:30</time> -
+            <time datetime="08:00">08:00</time>
+          </td>
+          <td>Breakfast</td>
+        </tr>
+        <tr>
+          <td>
+            <time datetime="08:00">08:00</time> -
+            <time datetime="08:30">08:30</time>
+          </td>
+          <td>Getting Ready for Office</td>
+        </tr>
+        <tr>
+          <td><time datetime="08:30">08:30</time></td>
+          <td>Leaving for Office</td>
+        </tr>
+        <tr>
+          <td>
+            <time datetime="10:00">10:00</time> -
+            <time datetime="21:00">21:00</time>
+          </td>
+          <td>Office Hours</td>
+        </tr>
+        <tr>
+          <td><time datetime="22:30">22:30</time></td>
+          <td>Reaching Home</td>
+        </tr>
+        <tr>
+          <td>
+            <time datetime="22:30">22:30</time> -
+            <time datetime="23:00">23:00</time>
+          </td>
+          <td>Dinner</td>
+        </tr>
+        <tr>
+          <td>
+            <time datetime="23:00">23:00</time> -
+            <time datetime="00:00">00:00</time>
+          </td>
+          <td>Studies</td>
+        </tr>
+        <tr>
+          <td><time datetime="00:10">00:10</time></td>
+          <td>Going to Sleep</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
